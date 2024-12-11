@@ -14,4 +14,4 @@ module:
     extended: true
     min: 0.110.0
 
-baseURL: "https://catalystneuro.github.io/dandi-hugo-example"
+baseURL: "https://catalystneuro.github.io/dandi-hugo-example/"
