@@ -1,11 +1,9 @@
 name: Deployment to GitHub Pages
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
-  pull_request:
 
 env:
   REPO_NAME: ${{ github.event.repository.name }}
