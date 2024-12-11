@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="team-page">
+    <header class="page-header">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Params.description }}</p>
+    </header>
+    <main>
+        <div class="team-list">
+            {{ range site.Data.team_members }}
+            <div class="team-member">
+                <img src="{{ .photo }}" alt="{{ .name }}" class="team-photo">
+                <div class="team-info">
+                    <h2>{{ .name }}</h2>
+                    <p>{{ .info | safeHTML }}</p>
+                    <p><strong>Email:</strong> <a href="mailto:{{ .email }}">{{ .email }}</a></p>
+                    <ul>
+                        {{ $teamMember := . }}
+                        {{ range seq 1 .number_educ }}
+                        <li>{{ index $teamMember (print "education" .) | safeHTML }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </main>
+</div>
+
+<style>
+    .team-page {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .team-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .team-info h2 {
+        font-size: 1.5rem;
+        color: #007acc;
+        margin-bottom: 10px;
+    }
+
+    .team-info p {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    .team-info ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .team-info ul li {
+        font-size: 0.9rem;
+    }
+</style>
+{{ end }}
