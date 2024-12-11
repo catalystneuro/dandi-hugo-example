@@ -8,7 +8,7 @@
         <div class="team-list">
             {{ range site.Data.team_members }}
             <div class="team-member">
-                <img src="{{ .photo }}" alt="{{ .name }}" class="team-photo">
+                <img src="{{ .Site.BaseURL | relURL }}{{ .photo }}" alt="{{ .name }}" class="team-photo">
                 <div class="team-info">
                     <h2>{{ .name }}</h2>
                     <p>{{ .info | safeHTML }}</p>
