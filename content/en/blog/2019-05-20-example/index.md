@@ -3,7 +3,7 @@ slug: explore-with-neurosift
 title: Exploring data with Neurosift
 description: >
   Lorem ipsum dolor sit amet...
-authors: [luiztauffer, bendichter]
+author: Luiz Tauffer ([@luiztauffer](https://github.com/luiztauffer)) and Ben Dichter ([@bendichter](https://github.com/bendichter))
 tags: [hola]
 date: 2018-01-04
 ---
