@@ -1,77 +1,68 @@
 ---
-title: Goldydocs
+title: DANDI
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
+{{< blocks/cover title="DANDI: Distributed Archives for Neurophysiology Data Integration" height="full" color="primary" image_anchor="center" image="images/dandi-banner.png" no_background_image_blur="true" >}}
+<p class="lead mt-5">
+The DANDI platform is supported by the BRAIN Initiative for publishing, sharing, and processing neurophysiology data. The archive accepts cellular neurophysiology data including electrophysiology, optophysiology, and behavioral time-series, and images from immunostaining experiments. The platform is now available for data upload and distribution. The storage of data in the archive is also supported by the Amazon Opendata program.
+</p>
+<p class="lead">
+The data in the archive can be browsed using the Data Portal. For detailed instructions on how to interact (view, upload, download, process) with DANDI <a href="/docs/" style="color: white; text-decoration: underline;">click here</a>.
+</p>
+<div class="mt-5">
+  <a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/">
+    Documentation <i class="fas fa-book ms-2"></i>
+  </a>
+  <a class="btn btn-lg btn-primary me-3 mb-4" href="https://dandiarchive.org/">
+    Data Portal <i class="fas fa-database ms-2"></i>
+  </a>
+</div>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
+{{% blocks/section-white %}}
+<div class="col-lg-8 text-center">
+  <h2 class="h1 mt-0">Why DANDI?</h2>
+  <p class="lead">
+    As an exercise, let's assume you lose all the data in your lab. What would you want from the archive? Our hope is that your answer to this question, the necessary data and metadata that you need, is at least what we should be storing.
+  </p>
+  <div class="mt-5">
+    <h3>What DANDI Provides</h3>
+    <ol>
+      <li>A cloud-based platform to store, process, and disseminate data. You can use DANDI to collaborate and publish datasets.</li>
+      <li>Open access to data to enable secondary uses of data outside the intent of the study.</li>
+      <li>Optimize data storage and access through partnerships, compression and accessibility technologies.</li>
+      <li>Enables reproducible practices and publications through data standards such as NWB and BIDS.</li>
+      <li>A living repository that enables collaboration within and across labs.</li>
+    </ol>
+  </div>
+</div>
+{{% /blocks/section-white %}}
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+{{% blocks/section color="white" type="row" %}}
+{{% blocks/feature icon="fas fa-newspaper" title="Latest News" %}}
+<div class="news-item">
+  <div class="news-date">2024 07 08-12</div>
+  NeuroDataReHack at the HHMI Janelia Research Campus
+</div>
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
+<div class="news-item">
+  <div class="news-date">2024 07 02</div>
+  Open Neurodata Showcase hosted virtually in Gather
+</div>
 
+<div class="news-item">
+  <div class="news-date">2024 04 15-16</div>
+  NWB and DANDI Workshop at Baylor College of Medicine
+</div>
 
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+<div class="news-item">
+  <div class="news-date">2024 02 29</div>
+  NWB and DANDI Tutorial at the COSYNE Conference
+</div>
 
-Please follow this space for updates!
+<p class="mt-4">
+  <a href="/news">... see all News</a>
+</p>
 {{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
 {{% /blocks/section %}}
