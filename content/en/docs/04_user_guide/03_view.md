@@ -9,7 +9,7 @@ When you go to the [DANDI Web application](https://dandiarchive.org/), you can c
 on `PUBLIC DANDISET` to access all Dandisets currently available
 in the archive, and you can sort them by name, identifier, size, or date of modification.
 
-![web_browse](/dandi-hugo-example/images/docs/web_browse.png)
+![web_browse](../../../images/docs/web_browse.png)
 
 ## Search Dandisets
 In addition, you can search across the Dandisets for any text part of the Dandiset metadata record.
@@ -17,12 +17,12 @@ The text may be about contributor names, modalities, or species.  For example,  
 return a subset of all Dandisets, while `"mouse house"` will likely not return any. When unquoted each
 word is used as an `OR`.
 
-![web_search_results](/dandi-hugo-example/images/docs/web_search.png)
+![web_search_results](../../../images/docs/web_search.png)
 
 When you click on one of the Dandisets, you can see that the searching phrase can
 appear in the description, keywords, or in the assets summary.
 
-![web_search_dandiset](/dandi-hugo-example/images/docs/web_search_dandiset.png)
+![web_search_dandiset](../../../images/docs/web_search_dandiset.png)
 
 ## Dandisets Metadata
 
