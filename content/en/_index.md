@@ -1,77 +1,25 @@
 ---
-title: Goldydocs
+title: DANDI
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
-</a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
-{{< blocks/link-down color="info" >}}
-{{< /blocks/cover >}}
+<div class="top-alert">
+  Help us help you! Please take our <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLScT0KLxT8pgQ4y6_Wqa_1IPHKJOrxGJ6nPMwxh1QS3od3P1lw/viewform">survey</a></strong> so we can learn about your data needs.
+</div>
 
+{{< blocks/banner title="DANDI: Distributed Archives for Neurophysiology Data Integration" show_news="true" >}}
+The DANDI platform is supported by the [BRAIN Initiative](https://braininitiative.nih.gov/) for publishing, sharing, and processing neurophysiology data. The archive accepts cellular neurophysiology data including electrophysiology, optophysiology, and behavioral time-series, and images from immunostaining experiments. The platform is now available for data upload and distribution. The storage of data in the archive is also supported by the [Amazon Opendata program](https://registry.opendata.aws/).
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+The data in the archive can be browsed using the [Data Portal](https://dandiarchive.org). For detailed instructions on how to interact (view, upload, download, process) with DANDI [click here](https://www.dandiarchive.org/handbook/).
+{{< /blocks/banner >}}
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
+{{< blocks/content-section title="Why DANDI?" >}}
+As an exercise, let's assume you lose all the data in your lab. What would you want from the archive? Our hope is that your answer to this question, the necessary data and metadata that you need, is at least what we should be storing.
 
+1. A cloud-based platform to store, process, and disseminate data. You can use DANDI to collaborate and publish datasets.
+2. Open access to data to enable secondary uses of data outside the intent of the study.
+3. Optimize data storage and access through partnerships, compression and accessibility technologies.
+4. Enables reproducible practices and publications through data standards such as NWB and BIDS.
+5. The platform is not just an endpoint to dump data, it is intended as a living repository that enables collaboration within and across labs.
 
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
-{{% /blocks/section %}}
+For a better view of how DANDI might help you, please see these [onboarding slides](https://docs.google.com/presentation/d/1hqw0vgNmelNnkPLuCSA1L5Rlu2rXeZEF6bsgc0y6Ve4/edit#slide=id.g113edc9c042_0_67).
+{{< /blocks/content-section >}}

@@ -1,9 +1,276 @@
 /*
-
 Add styles or override variables from the theme here.
-
 */
 
+// Override primary color to match DANDI's branding
+$primary: #00A1D8;
+$secondary: #005B7F;
+
+// Banner styles
+.home-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/dandi-banner.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    color: #fff;
+    position: relative;
+    padding: 4rem 0;
+    margin-bottom: 0;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        color: #fff;
+        line-height: 1.2;
+    }
+
+    .banner-text {
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        a {
+            color: $primary;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: lighten($primary, 10%);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .news-sidebar {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 4px;
+        backdrop-filter: blur(5px);
+
+        h4 {
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .news-item {
+            margin-bottom: 1.5rem;
+
+            .date {
+                color: $primary;
+                font-weight: 500;
+                margin-bottom: 0.25rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0.95rem;
+                opacity: 0.9;
+
+                em {
+                    font-style: normal;
+                }
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        .see-all {
+            margin-top: 2rem;
+
+            h4 {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+
+            a {
+                color: $primary;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// Main content styles
+.main-content {
+    padding: 6rem 0;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        color: #333;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+
+    ol {
+        counter-reset: item;
+        list-style: none;
+        padding: 0;
+        margin: 2.5rem 0;
+
+        li {
+            counter-increment: item;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+
+            &::before {
+                content: counter(item);
+                position: absolute;
+                left: 0;
+                top: 0.2rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: $primary;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    a {
+        color: $primary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: darken($primary, 10%);
+            text-decoration: underline;
+        }
+    }
+}
+
+// Footer section styles
+.footer-section {
+    background: #2a2a2a;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    h5 {
+        color: #fff;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+    p {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    ul.list-unstyled {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+
+    .row>div {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Alert styles
+.top-alert {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    a {
+        color: #721c24;
+        text-decoration: underline;
+        font-weight: 500;
+
+        &:hover {
+            color: darken(#721c24, 10%);
+        }
+    }
+}
+
+// Hide page meta elements
 .td-page-meta__view {
     display: none !important;
 }
