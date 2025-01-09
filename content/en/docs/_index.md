@@ -1,28 +1,62 @@
 ---
+id: documentation
 title: Documentation
 linkTitle: Docs
+description: >
+  Welcome to the DANDI Archive Documentation!
 menu: {main: {weight: 1}}
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+![dandi banner](/dandi-hugo-example/images/dandi-banner.png)
 
-This section is where the user documentation for your project lives - all the
-information your users need to understand and successfully use your project.
+The Web interface to the DANDI archive is located at [https://dandiarchive.org](https://dandiarchive.org).
+This documentation explains how to interact with the archive.
 
-For large documentation sets we recommend adding content under the headings in
-this section, though if some or all of them don’t apply to your project feel
-free to remove them or add your own. You can see an example of a smaller Docsy
-documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which
-lives in the [Docsy theme
-repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to
-copy its docs section.
+## How to Use This Documentation
 
-Other content such as marketing material, case studies, and community updates
-should live in the [About](/about/) and [Community](/community/) pages.
+If you want to know more about the DANDI project, its goals, and the problems
+it tries to solve, check out the [Introduction](./00-welcome.mdx).
 
-Find out how to use the Docsy theme in the [Docsy User
-Guide](https://docsy.dev/docs/). You can learn more about how to organize your
-documentation (and how we organized this site) in [Organizing Your
-Content](https://docsy.dev/docs/best-practices/organizing-content/).
+To start using the archive, head over to [Using DANDI](./00-welcome.mdx) in the User Guide section.
+
+If you are a developer and want to know how the project is organized, check out the [Project Structure](./00-welcome.mdx)
+page in the Developer Guide section.
+
+## Where to Get Help
+
+You can communicate with the DANDI team in a variety of ways, depending on your needs:
+
+- You can ask questions, report bugs, or
+  request features [at our helpdesk](https://github.com/dandi/helpdesk/issues/new/choose).
+- For interacting with the global neuroscience community, post on [Neurostars](https://neurostars.org)
+  and use the tag [dandi](https://neurostars.org/tag/dandi).
+- You can use the DANDI Slack workspace, which we will invite you to after approving your [registration on
+  DANDI using GitHub](https://dandiarchive.org/) (this registration is required to upload data or to use the DANDI
+  JupyterHub). See [here for details on how to
+  register](./00-welcome.mdx).
+- Email us: [info@dandiarchive.org](mailto:info@dandiarchive.org)
+
+## Contributing and Feedback
+
+We are looking for people to give us feedback on this documentation. If anything
+is unclear, [open an issue on our repository](https://github.com/dandi/handbook/issues). You can also get in touch on
+our Slack channel, which is available to those who have
+registered an account on the archive.
+
+If you want to get started right away and contribute directly to this
+documentation, see the [About This Documentation](./00-welcome.mdx) section.
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+  <img
+    alt="Creative Commons License"
+    style="border-width: 0;"
+    src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+  />
+</a>
+<br />
+This work is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+  Creative Commons Attribution 4.0 International License
+</a>
