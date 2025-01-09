@@ -14,11 +14,11 @@ the following terms:
    and making available of research, educational and informational content. Access
    to DANDI’s content is open to all.
 
-1. Content may be uploaded free of charge by the US BRAIN Initiative and other
+2. Content may be uploaded free of charge by the US BRAIN Initiative and other
    projects required to submit data to a public archive and those without ready
    access to an organized data center.
 
-1. The uploader is exclusively responsible for the content that they upload to
+3. The uploader is exclusively responsible for the content that they upload to
    DANDI and shall indemnify and hold the DANDI team free and harmless in
    connection with their use of the service. The uploader shall ensure that their
    content is suitable for open dissemination, and that it complies with these
@@ -28,30 +28,30 @@ the following terms:
    through DANDI, the uploader shall ensure that such data is either anonymized
    to an appropriate degree or fully consent cleared [2].
 
-1. Access to DANDI, and all content, is provided on an "as-is" basis. Users of
+4. Access to DANDI, and all content, is provided on an "as-is" basis. Users of
    content ("Users") shall respect applicable license conditions. Download and
    use of content from DANDI does not transfer any intellectual property rights
    in the content to the User.
 
-1. Users are exclusively responsible for their use of content, and shall indemnify
+5. Users are exclusively responsible for their use of content, and shall indemnify
    and hold the DANDI team free and harmless in connection with their download
    and/or use. Hosting and making content available through DANDI does not
    represent any approval or endorsement of such content by the DANDI team.
 
-1. The DANDI team reserves the right, without notice, at its sole discretion and
+6. The DANDI team reserves the right, without notice, at its sole discretion and
    without liability, (i) to alter, delete or block access to content that it
    deems to be inappropriate or insufficiently protected, and (ii) to restrict
    or remove User access where it considers that use of DANDI interferes with
    its operations or violates these Terms of Use or applicable laws.
 
-1. Unless specified otherwise, DANDI metadata may be freely reused under the
+7. Unless specified otherwise, DANDI metadata may be freely reused under the
    [CC0 waiver](https://creativecommons.org/publicdomain/zero/1.0/).
 
-1. These Terms of Use are subject to change by the DANDI team at any time and
+8. These Terms of Use are subject to change by the DANDI team at any time and
    without notice, other than through posting the updated Terms of Use on the
    DANDI website.
 
-* Uploaders considering DANDI for the storage of unanonymized or encrypted/unencrypted
+9. Uploaders considering DANDI for the storage of unanonymized or encrypted/unencrypted
   sensitive personal data are advised to use bespoke platforms rather than open
   dissemination services like DANDI for sharing their data.
 
