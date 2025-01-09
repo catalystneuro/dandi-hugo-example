@@ -1,8 +1,8 @@
 ---
 title: Blog
-menu: {main: {weight: 2}}
+type: blog
+layout: list
+sidebar_none: true
 ---
 
-This is the **blog** section. It has two categories: News and Releases.
-
-Files in these directories will be listed in reverse chronological order.
+Stay up to date with our latest blog posts and updates.

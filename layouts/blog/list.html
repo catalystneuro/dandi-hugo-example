@@ -1,0 +1,212 @@
+{{ define "main" }}
+<div class="td-content blog-content">
+    <div class="blog-page">
+        <header class="page-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+        </header>
+        <main>
+            <div class="blog-list">
+                {{ range .Pages.ByDate.Reverse }}
+                <article class="blog-post">
+                    <h2 class="post-title">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                    <div class="post-meta">
+                        {{ if .Date }}
+                        <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00" }}">
+                            {{ .Date.Format "January 2, 2006" }}
+                        </time>
+                        {{ end }}
+                        {{ with .Params.author }}
+                        <span class="post-author">by {{ . | markdownify }}</span>
+                        {{ end }}
+                        {{ with .Params.tags }}
+                        <div class="post-tags">
+                            {{ range . }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ with .Description }}
+                    <div class="post-description">
+                        {{ . | markdownify }}
+                    </div>
+                    {{ end }}
+                    <div class="post-footer">
+                        <a href="{{ .RelPermalink }}" class="read-more">
+                            Read More <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+                {{ end }}
+            </div>
+        </main>
+    </div>
+</div>
+
+<style>
+    .blog-content {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+        background: #f8f9fa;
+    }
+
+    .blog-page {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .page-header h1 {
+        font-size: 3rem;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+
+    .page-header p {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 0;
+    }
+
+    .blog-list {
+        display: grid;
+        gap: 2.5rem;
+    }
+
+    .blog-post {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 2.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-post:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-title {
+        margin: 0 0 1.25rem;
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .post-title a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .post-title a:hover {
+        color: var(--primary-dark);
+    }
+
+    .post-meta {
+        font-size: 0.95rem;
+        color: #666;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .post-author {
+        color: #444;
+    }
+
+    .post-tags {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .tag {
+        background: #f0f0f0;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        color: #666;
+        transition: background-color 0.2s ease;
+    }
+
+    .tag:hover {
+        background: #e0e0e0;
+    }
+
+    .post-description {
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .post-footer {
+        margin-top: auto;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+
+    .read-more {
+        display: inline-flex;
+        align-items: center;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        font-size: 1.1rem;
+    }
+
+    .read-more .arrow {
+        margin-left: 0.5rem;
+        transition: transform 0.2s ease;
+    }
+
+    .read-more:hover {
+        color: var(--primary-dark);
+    }
+
+    .read-more:hover .arrow {
+        transform: translateX(4px);
+    }
+
+    @media (max-width: 768px) {
+        .blog-page {
+            padding: 3rem 1rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .blog-post {
+            padding: 2rem;
+        }
+
+        .post-title {
+            font-size: 1.75rem;
+        }
+
+        .post-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .post-description {
+            font-size: 1rem;
+        }
+    }
+</style>
+{{ end }}

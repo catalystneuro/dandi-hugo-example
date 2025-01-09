@@ -1,6 +1,159 @@
 /*
-
-Add styles or override variables from the theme here.
-
+DANDI Website Custom Styles
 */
 
+// Colors
+$primary: #00838f;
+$secondary: #455a64;
+$dark: #263238;
+$info: #0097a7;
+
+// Typography
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// Custom styles
+.td-navbar {
+    background: $primary !important;
+    min-height: 4rem;
+
+    .navbar-brand {
+        padding: 0.5rem;
+
+        svg,
+        img {
+            height: 40px;
+        }
+    }
+}
+
+.td-cover-block {
+    background-color: #00838f !important;
+
+    &::before {
+        background-image: none;
+    }
+
+    .td-cover-block__inner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .display-1 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .card-header {
+        background-color: rgba(0, 0, 0, .03);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+        padding: 0.75rem 1.25rem;
+
+        h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: $dark;
+        }
+    }
+
+    .card-body {
+        padding: 1.25rem;
+
+        h5 {
+            color: $primary;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $primary;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+
+    &.btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
+
+    &.btn-primary {
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover {
+            background-color: darken($primary, 5%);
+            border-color: darken($primary, 5%);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondary;
+        border-color: $secondary;
+
+        &:hover {
+            background-color: darken($secondary, 5%);
+            border-color: darken($secondary, 5%);
+        }
+    }
+}
+
+// Survey banner
+.td-block-lead {
+    background-color: $dark;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+// Content sections
+.td-block-section {
+    padding: 4rem 0;
+
+    h1 {
+        color: $primary;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+}

@@ -48,7 +48,82 @@ languages:
     languageName: English
     title: DANDI
     params:
-      description: A Docsy example site
+      description: DANDI website
+baseURL: https://catalystneuro.github.io/dandi-hugo-example
+title: DANDI
+
+# cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
+
+# Language settings
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+# Useful when translating.
+enableMissingTranslationPlaceholders: true
+
+enableRobotsTXT: true
+
+# Will give values to .Lastmod etc.
+enableGitInfo: true
+
+# Comment out to enable taxonomies in Docsy
+# disableKinds: [taxonomy, taxonomyTerm]
+
+# You can add your own taxonomies
+taxonomies:
+  tag: tags
+  category: categories
+
+# Highlighting config
+pygmentsCodeFences: true
+pygmentsUseClasses: false
+# Use the new Chroma Go highlighter in Hugo.
+pygmentsUseClassic: false
+# pygmentsOptions: "linenos=table"
+# See https://help.farbox.com/pygments.html
+pygmentsStyle: tango
+
+# Configure how URLs look like per section.
+permalinks:
+  blog: /:section/:year/:month/:day/:slug/
+
+# Image processing configuration.
+imaging:
+  resampleFilter: CatmullRom
+  quality: 75
+  anchor: smart
+
+# Language configuration
+languages:
+  en:
+    languageName: English
+    title: DANDI
+    params:
+      description: DANDI website
+
+menu:
+  main:
+    - name: Data Portal
+      url: https://dandiarchive.org/
+      weight: 10
+    - name: Documentation
+      url: /docs/
+      weight: 20
+    - name: DandiHub
+      url: https://hub.dandiarchive.org/
+      weight: 30
+    - name: News
+      url: /news/
+      weight: 40
+    - name: Blog
+      url: /blog/
+      weight: 50
+    - name: Team
+      url: /team/
+      weight: 60
+    - name: Openings
+      url: https://apply.interfolio.com/133836
+      weight: 70
 
 markup:
   goldmark:
@@ -83,7 +158,7 @@ params:
   privacy_policy: https://policies.google.com/privacy
 
   # First one is picked as the Twitter card image if not set on page.
-  # images: [images/project-illustration.png]
+  images: ["images/dandi-banner.png"]
 
   # Menu title if your navbar has a versions selector to access old versions of your site.
   # This menu appears only if you have at least one [params.versions] set.
@@ -136,7 +211,7 @@ params:
     # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
     navbar_logo: true
     # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
-    navbar_translucent_over_cover_disable: false
+    navbar_translucent_over_cover_disable: true
     # Enable to show the side bar menu in its compact state.
     sidebar_menu_compact: false
     # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
