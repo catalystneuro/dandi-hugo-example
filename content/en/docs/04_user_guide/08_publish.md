@@ -1,7 +1,10 @@
-# Publishing Dandisets
+---
+title: Publishing Dandisets
+weight: 8
+---
 
 Once you create a Dandiset, DANDI will automatically create a `draft` version
-of the Dandiset that can be changed as many times as needed by editing the 
+of the Dandiset that can be changed as many times as needed by editing the
 metadata or uploading new files.
 
 When the draft version is ready, you can *publish* your Dandiset. This results
@@ -31,5 +34,5 @@ Follow these steps to publish your Dandiset:
    the new, published version of your Dandiset listed. Click on that link
    to view this version.
 
-**NOTE:** Dandisets with Zarr assets currently cannot be published. We are 
+**NOTE:** Dandisets with Zarr assets currently cannot be published. We are
 actively working on enabling this feature.

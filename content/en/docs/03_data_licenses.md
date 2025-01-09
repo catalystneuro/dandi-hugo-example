@@ -2,7 +2,7 @@
 id: data_licenses
 title: Data Licenses
 linkTitle: Data Licenses
-menu: {main: {weight: 3}}
+weight: 3
 ---
 
 

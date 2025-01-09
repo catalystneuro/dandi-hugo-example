@@ -1,4 +1,7 @@
-# Citing a Dandiset
+---
+title: Citing a Dandiset
+weight: 9
+---
 
 If you use a Dandiset in your research, please acknowledge the Dandiset by citing it, just as you would a publication,
 including the DOI.
@@ -12,9 +15,9 @@ replace the need to cite the Dandiset itself.**
 
 Citing the Dandiset and other datasets is important because it provides a direct link to the data used in your research. That is crucial, because it:
 
-  - allows others to better understand and verify your results, and facilitates reproducibility, 
+  - allows others to better understand and verify your results, and facilitates reproducibility,
   - connects your work to other research using the same dataset,
-  - provides credit to the data collectors and maintainers, 
+  - provides credit to the data collectors and maintainers,
   - helps track the impact of DANDI and other data archives.
 
 ## Data availability statement

@@ -1,4 +1,7 @@
-# Dandiset Metadata
+---
+title: Dandiset Metadata
+weight: 7
+---
 
 The Dandiset Landing Page (DLP) displays metadata about the Dandiset and the data within.
 Some of this metadata is automatically extracted from the files, for example the `Size` in the top panel.

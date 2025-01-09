@@ -2,7 +2,7 @@
 id: data_standards
 title: Data Standards
 linkTitle: Data Standards
-menu: {main: {weight: 2}}
+weight: 2
 ---
 
 

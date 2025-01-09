@@ -1,4 +1,7 @@
-# Creating Dandisets and Uploading Data
+---
+title: Creating Dandisets and Uploading Data
+weight: 5
+---
 
 This page provides instructions for creating a new Dandiset and uploading data to DANDI.
 
@@ -21,11 +24,11 @@ This page provides instructions for creating a new Dandiset and uploading data t
     - **Development server**: https://gui-staging.dandiarchive.org. This server is for testing and learning how to use DANDI.
       It is not recommended for sharing data, but is recommended for testing the DANDI CLI and GUI or as a testing platform for developers.
       Note that the development server should not be used to stage your data.
-   
-     The below instructions will alert you to where the commands for interacting with these two different servers differ slightly. 
+
+     The below instructions will alert you to where the commands for interacting with these two different servers differ slightly.
 
 3. **Register for DANDI and copy the API key.** To create a new Dandiset and upload your data, you need to have a DANDI account.
-     * If you do not already have an account, see [Create a DANDI Account](./16_account.md) page for instructions. 
+     * If you do not already have an account, see [Create a DANDI Account](./16_account.md) page for instructions.
      * Once you are logged in, copy your API key.
      Click on your user initials in the top-right corner after logging in.
      Production (https://dandiarchive.org) and staging (https://gui-staging.dandiarchive.org) servers have different API keys and different logins.
@@ -39,27 +42,27 @@ DANDI. See the **[NWB GUIDE Dataset Publication Tutorial](https://nwb-guide.read
 The below instructions show how to do the same thing programmatically using the command line interface (CLI).
 The CLI approach may be more suitable for users who are comfortable with the command line or who need to automate the process, or for advanced use-cases.
 
-1. **Create a new Dandiset.** 
+1. **Create a new Dandiset.**
     * Click `NEW DANDISET` in the Web application (top right corner) after logging in.
-    * You will be asked to enter basic metadata: a name (title) and description (abstract) for your dataset. 
+    * You will be asked to enter basic metadata: a name (title) and description (abstract) for your dataset.
     * After you provide a name and description, the dataset identifier will be created; we will call this `<dataset_id>`.
 1. **Check your files for [NWB Best Practices](https://nwbinspector.readthedocs.io/en/dev/best_practices/best_practices_index.html).**
    Run [NWB Inspector](https://nwbinspector.readthedocs.io/en/dev/user_guide/user_guide_index.html) programmatically. Install the Python library (`pip install -U nwbinspector`) and run:
 
         nwbinspector <source_folder> --config dandi
-   
+
      If the report is too large to efficiently navigate in your console, you can save a report using
 
         nwbinspector <source_folder> --config dandi --report-file-path <report_location>.txt
-          
+
      For more details and other options, run:
-                
+
         nwbinspector --help
 
      Thoroughly read the NWBInspector report and try to address as many issues as possible.
      **DANDI will prevent validation and upload of any issues labeled as level 'CRITICAL' or above when using the `--config dandi` option.**
-     See ["Validation Levels for NWB Files"](./135_validation.md) for more information about validation criteria for 
-     uploading NWB files and which are deemed critical. We recommend regularly running the inspector early in the process to generate the best NWB files possible. Note that some auto-detected violations, such as `check_data_orientation`, may be safely ignored in the event 
+     See ["Validation Levels for NWB Files"](./135_validation.md) for more information about validation criteria for
+     uploading NWB files and which are deemed critical. We recommend regularly running the inspector early in the process to generate the best NWB files possible. Note that some auto-detected violations, such as `check_data_orientation`, may be safely ignored in the event
      that the data is confirmed to be in the correct form. See [the NWBInspector CLI documentation](https://nwbinspector.readthedocs.io/en/dev/user_guide/using_the_command_line_interface.html) for more information.
 
 1. **Install the [DANDI Client](https://pypi.org/project/dandi/).**
@@ -67,7 +70,7 @@ The CLI approach may be more suitable for users who are comfortable with the com
         pip install -U dandi
 
 1. **Validate NWB files.** Perform a validation of the NWB files by running:
-        
+
         dandi validate --ignore DANDI.NO_DANDISET_FOUND <source_folder>
 
      **If you are having trouble with validation, make sure the conversions were run with the most recent version of `dandi`, `PyNWB` and `MatNWB`.**

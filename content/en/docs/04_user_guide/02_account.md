@@ -1,4 +1,7 @@
-# Create a DANDI Account
+---
+title: Create a DANDI Account
+weight: 2
+---
 
 A DANDI account enhances your capabilities within the DANDI Archive.
 Without an account, users can freely search, view, and download available datasets.

@@ -1,4 +1,7 @@
-# Downloading Data and Dandisets
+---
+title: Downloading Data and Dandisets
+weight: 4
+---
 
 You can download the content of a Dandiset using the DANDI Web application (such a specific file) or entire
 Dandisets using the DANDI Python CLI.

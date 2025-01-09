@@ -1,5 +1,7 @@
-# Debugging
-
+---
+title: Debugging
+weight: 10
+---
 
 If something goes wrong while using the Python CLI client, the
 first place to check for more information so that you can [file a quality bug

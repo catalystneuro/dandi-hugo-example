@@ -1,4 +1,7 @@
-# Developer Notes
+---
+title: Developer Notes
+weight: 2
+---
 
 This page contains important information for anyone starting development work on the DANDI
 project.
@@ -10,7 +13,7 @@ The DANDI archive dev environment comprises three major pieces of software:
 
 ### `dandi-archive`
 [`dandi-archive`](https://github.com/dandi/dandi-archive) is the web frontend
-application; it connects to `dandi-api` and provides a user interface to all the DANDI functionality. 
+application; it connects to `dandi-api` and provides a user interface to all the DANDI functionality.
 `dandi-archive` is a standard web application built with
 `yarn`. See the [`dandi-archive` README](https://github.com/dandi/dandi-archive#readme)
 for instructions on how to build it locally.
@@ -36,12 +39,12 @@ following the instructions in the [`dandi-cli` README](https://github.com/dandi/
 
 ### `dandi-schema`
 
-[`dandi-schema`](https://github.com/dandi/dandi-schema) is a Python library for 
-creating, maintaining, and validating the DANDI metadata models for dandisets 
-and assets. You may need to make use of this tool when improving models, or 
-migrating metadata. You can install `dandi-schema` with a command like 
-`pip install dandi-schema`. When releases are published through dandi-schema, 
-corresponding json-schemas are generated in the release folder of the [dandi schema repo](https://github.com/dandi/schema). See the `dandi-schema` [README](https://github.com/dandi/schema#readme) for instructions on 
+[`dandi-schema`](https://github.com/dandi/dandi-schema) is a Python library for
+creating, maintaining, and validating the DANDI metadata models for dandisets
+and assets. You may need to make use of this tool when improving models, or
+migrating metadata. You can install `dandi-schema` with a command like
+`pip install dandi-schema`. When releases are published through dandi-schema,
+corresponding json-schemas are generated in the release folder of the [dandi schema repo](https://github.com/dandi/schema). See the `dandi-schema` [README](https://github.com/dandi/schema#readme) for instructions on
 viewing the schemas.
 
 ## Technologies Used
@@ -136,7 +139,7 @@ facilities:
   help@dandiarchive.org. These are "virtual" email addresses managed by DNS
   entries.
 - **Transactional email.** The Archive sends email to users to manage the signup
-  process and to inform about special situations such as long running operations, 
+  process and to inform about special situations such as long running operations,
   registration reject/approval, Dandiset embargo and unembargo, changes to
   ownership, etc. These are sent via Amazon Simple Email Service (SES),
   programmatically from the Archive code.

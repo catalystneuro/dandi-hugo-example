@@ -1,4 +1,7 @@
-# Contributing to this Handbook
+---
+title: Contributing
+weight: 3
+---
 
 This documentation is a work in progress and we welcome all input: if something
 is missing or unclear, let us know by [opening an issue on our helpdesk](https://github.com/dandi/helpdesk/issues/new/choose).
