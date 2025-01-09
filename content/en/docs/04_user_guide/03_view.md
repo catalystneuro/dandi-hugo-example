@@ -9,10 +9,7 @@ When you go to the [DANDI Web application](https://dandiarchive.org/), you can c
 on `PUBLIC DANDISET` to access all Dandisets currently available
 in the archive, and you can sort them by name, identifier, size, or date of modification.
 
-<img
-src="../img/web_browse.png"
-alt="web_browse"
-style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
+![web_browse](/dandi-hugo-example/images/docs/web_browse.png)
 
 ## Search Dandisets
 In addition, you can search across the Dandisets for any text part of the Dandiset metadata record.
@@ -20,20 +17,12 @@ The text may be about contributor names, modalities, or species.  For example,  
 return a subset of all Dandisets, while `"mouse house"` will likely not return any. When unquoted each
 word is used as an `OR`.
 
-<img
-src="../img/web_search.png"
-alt="web_search"
-style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
-
+![web_search_results](/dandi-hugo-example/images/docs/web_search.png)
 
 When you click on one of the Dandisets, you can see that the searching phrase can
 appear in the description, keywords, or in the assets summary.
 
-<img
-src="../img/web_search_dandiset.png"
-alt="web_search_dandiset"
-style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
-
+![web_search_dandiset](/dandi-hugo-example/images/docs/web_search_dandiset.png)
 
 ## Dandisets Metadata
 
@@ -43,7 +32,7 @@ metadata provided by the owners such as contact information, description, licens
  a summary of the Dandiset including information about species, techniques, and standards.
 
 <img
-src="../img/web_dandiset_lp.png"
+src="/images/docs/web_dandiset_lp.png"
 alt="web_dandiset_lp"
 style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
@@ -57,7 +46,7 @@ found by clicking `Metadata` on the right-side panel. For Dandiset owners, this 
 adding relevant metadata to populate the landing page.
 
 <img
-src="../img/web_dandiset_metadata.png"
+src="/images/docs/web_dandiset_metadata.png"
 alt="web_dandiset_metadata"
 style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
@@ -67,7 +56,7 @@ The right side panel allows you also to access a file browser to navigate the li
 in a Dandiset.
 
 <img
-src="../img/web_dandiset_files.png"
+src="/images/docs/web_dandiset_files.png"
 alt="web_dandiset_files"
 style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
 
@@ -83,7 +72,7 @@ services that can open the file. *Note:* that these services often have size lim
 If you log in as a registered user, you will also see `My Dandisets` tab:
 
 <img
-src="../img/my_dandiset.png"
+src="/images/docs/my_dandiset.png"
 alt="my_dandiset"
 style="width: 7
 0%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
