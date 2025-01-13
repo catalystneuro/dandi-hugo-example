@@ -8,14 +8,13 @@ $secondary: #005B7F;
 
 // Banner styles
 .home-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
+    background-color: #4C4C4C;
+    min-height: 40vh;
+    width: 100%;
     color: #fff;
     position: relative;
     padding: 4rem 0;
-    margin-bottom: 0;
+    margin: 0;
 
     .container {
         position: relative;
@@ -24,7 +23,7 @@ $secondary: #005B7F;
 
     h1 {
         font-size: 3rem;
-        font-weight: 300;
+        font-weight: 400;
         margin-bottom: 2rem;
         color: #fff;
         line-height: 1.2;
@@ -185,6 +184,16 @@ $secondary: #005B7F;
         }
     }
 }
+
+// // Navbar styles
+// .td-navbar {
+//     background-color: #F5F5F5 !important;
+//     color: #333 !important;
+// }
+
+// .navbar-brand__name {
+//     color: #333 !important;
+// }
 
 // Footer section styles
 .footer-section {
