@@ -2,10 +2,6 @@
 title: DANDI
 ---
 
-<div class="top-alert">
-  Help us help you! Please take our <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLScT0KLxT8pgQ4y6_Wqa_1IPHKJOrxGJ6nPMwxh1QS3od3P1lw/viewform">survey</a></strong> so we can learn about your data needs.
-</div>
-
 {{< blocks/banner title="DANDI: Distributed Archives for Neurophysiology Data Integration" show_news="true" >}}
 The DANDI platform is supported by the [BRAIN Initiative](https://braininitiative.nih.gov/) for publishing, sharing, and processing neurophysiology data. The archive accepts cellular neurophysiology data including electrophysiology, optophysiology, and behavioral time-series, and images from immunostaining experiments. The platform is now available for data upload and distribution. The storage of data in the archive is also supported by the [Amazon Opendata program](https://registry.opendata.aws/).
 

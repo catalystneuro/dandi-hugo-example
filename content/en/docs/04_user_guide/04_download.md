@@ -12,25 +12,15 @@ Once you have the Dandiset you are interested in (see more in [the Dandiset View
 On the landing page of each Dandiset, you can find `Download` button on the right-hand panel. After clicking the
 button, you will see the specific command you can use with DANDI Python CLI (as well as the information on how to download the CLI).
 
-<img
-src="../img/web_dandiset_rsp_download.png"
-alt="web_dandiset_rsp_download"
-style="width: 30%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
-
+![web_dandiset_rsp_download](../../../images/docs/web_dandiset_rsp_download.png)
 
 ### Download specific files
 
 The right-side panel of the Dandiset landing page allows you also to access the list of folders and files.
 
-<img
-src="../img/web_dandiset_files.png"
-alt="web_dandiset_files"
-style="width: 60%; height: auto; display: block; margin-left: auto;  margin-right: auto;"/>
-
+![web_dandiset_files](../../../images/docs/web_dandiset_files.png)
 
 Each file in the Dandiset has a download icon next to it, clicking the icon will start the download process.
-
-
 
 ## Using the Python CLI Client
 
