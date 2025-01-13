@@ -5,9 +5,7 @@ weight: 1
 
 The DANDI project can be represented schematically:
 
-<img src="../img/dandi_structure.svg"
-alt="dandi_structure"
-style="width: 70%; height: auto; display: block; margin-left: auto; margin-right: auto;"/>
+![dandi_structure](../../../images/docs/dandi_structure.svg)
 
 The **Client side** contains the DANDI Python CLI and DANDI Web application.
 

@@ -8,26 +8,15 @@ is missing or unclear, let us know by [opening an issue on our helpdesk](https:/
 
 ## Serving the Docs Locally
 
-This project uses the [MkDocs](https://www.mkdocs.org/) tool with the [Material theme](https://squidfunk.github.io/mkdocs-material/)
-and extra plugins to generate the website.
+This project uses the [Hugo](https://gohugo.io/) to generate the website. To test locally, you will need to install Hugo.
 
-To test locally, you will need to install the Python dependencies. To do that, type the following commands:
-
-```
-git clone https://github.com/dandi/handbook.git
-cd handbook
-pip install -r requirements.txt
-```
-
-If you are working on your *fork*, simply replace `https://github.com/dandi/handbook.git`
-with `git clone git@github.com/<username>/handbook.git` , where `<username>` is your
-GitHub username.
-
-Once done, you need to run MkDocs. Simply type:
+To run a local server, type the following commands:
 
 ```
-mkdocs serve
+git clone https://github.com/dandi/dandi.github.io.git
+cd dandi.github.io
+hugo server
 ```
 
-Finally, open [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/) in your
+Finally, open [`http://127.0.0.1:1313/`](http://127.0.0.1:1313/) in your
 browser, and you should see the default home page of the documentation being displayed.
