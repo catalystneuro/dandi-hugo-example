@@ -10,11 +10,14 @@ $secondary: #005B7F;
 .home-banner {
     background-color: #4C4C4C;
     min-height: 40vh;
-    width: 100%;
+    width: 100vw;
     color: #fff;
     position: relative;
     padding: 4rem 0;
     margin: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    overflow: hidden;
 
     .container {
         position: relative;
