@@ -188,16 +188,6 @@ $secondary: #005B7F;
     }
 }
 
-// // Navbar styles
-// .td-navbar {
-//     background-color: #F5F5F5 !important;
-//     color: #333 !important;
-// }
-
-// .navbar-brand__name {
-//     color: #333 !important;
-// }
-
 // Footer section styles
 .footer-section {
     background: #2a2a2a;
@@ -256,28 +246,6 @@ $secondary: #005B7F;
 
         @media (min-width: 768px) {
             margin-bottom: 0;
-        }
-    }
-}
-
-// Alert styles
-.top-alert {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    color: #721c24;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-
-    a {
-        color: #721c24;
-        text-decoration: underline;
-        font-weight: 500;
-
-        &:hover {
-            color: darken(#721c24, 10%);
         }
     }
 }
