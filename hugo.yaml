@@ -188,20 +188,17 @@ params:
       - name: Twitter
         url: https://twitter.com/dandiarchive
         icon: fab fa-twitter
-      - name: Stack Overflow
-        url: https://example.org/stack
-        icon: fab fa-stack-overflow
+      - name: Bluesky
+        url: https://bsky.app/profile/www.dandiarchive.org
+        icon: fa-brands fa-bluesky
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
         url: https://github.com/dandi
         icon: fab fa-github
       - name: Slack
-        url: mit.enterprise.slack.com
+        url: https://mit.enterprise.slack.com
         icon: fab fa-slack
-      - name: Developer mailing list
-        url: https://example.org/mail
-        icon: fa fa-envelope
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
