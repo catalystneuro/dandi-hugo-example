@@ -51,9 +51,19 @@ languages:
       description: A Docsy example site
     menu:
       main:
-        - name: Docs
-          url: https://docs.dandiarchive.org/
+        - name: Data Portal
+          url: https://dandiarchive.org/
           weight: 1
+          params:
+            target: _blank
+        - name: Documentation
+          url: https://docs.dandiarchive.org/
+          weight: 2
+          params:
+            target: _blank
+        - name: DandiHub
+          url: http://hub.dandiarchive.org/
+          weight: 3
           params:
             target: _blank
 
