@@ -87,6 +87,7 @@ outputs:
   section: [HTML, print, RSS]
 
 params:
+  favicon: favicon.ico
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
     taxonomyCloud: [tags, categories]
@@ -181,32 +182,26 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: User mailing list
-        url: https://example.org/mail
+      - name: Email contact
+        url: info@dandiarchive.org
         icon: fa fa-envelope
-        desc: Discussion and help from your fellow users
       - name: Twitter
-        url: https://example.org/twitter
+        url: https://twitter.com/dandiarchive
         icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
       - name: Stack Overflow
         url: https://example.org/stack
         icon: fab fa-stack-overflow
-        desc: Practical questions and curated answers
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
       - name: GitHub
-        url: https://github.com/google/docsy
+        url: https://github.com/dandi
         icon: fab fa-github
-        desc: Development takes place here!
       - name: Slack
-        url: https://example.org/slack
+        url: mit.enterprise.slack.com
         icon: fab fa-slack
-        desc: Chat with other project developers
       - name: Developer mailing list
         url: https://example.org/mail
         icon: fa fa-envelope
-        desc: Discuss development issues around the project
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
