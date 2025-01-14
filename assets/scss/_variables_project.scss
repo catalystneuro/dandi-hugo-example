@@ -64,7 +64,7 @@ $footer-color: #414141;
     width: 100vw;
     color: #fff;
     position: relative;
-    padding: 4rem 0;
+    padding: 6rem 0 4rem;
     margin: 0;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -76,11 +76,13 @@ $footer-color: #414141;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.7rem;
         font-weight: 400;
         margin-bottom: 2rem;
         color: #fff;
         line-height: 1.2;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .banner-text {
