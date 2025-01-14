@@ -1,4 +1,6 @@
 FROM floryn90/hugo:ext-alpine
 
-RUN apk add git && \
+USER root
+
+RUN apk add --no-cache git && \
   git config --global --add safe.directory /src
