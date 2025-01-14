@@ -6,6 +6,56 @@ Add styles or override variables from the theme here.
 $primary: #00A1D8;
 $secondary: #005B7F;
 
+// Navbar and footer colors
+$navbar-bg: #f5f5f5;
+$navbar-color: #414141;
+$footer-bg: #f5f5f5;
+$footer-color: #414141;
+
+// Override navbar styles
+.td-navbar {
+    background: $navbar-bg !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+
+    .navbar-brand {
+        color: #00436D !important;
+    }
+
+    .nav-link {
+        color: $navbar-color !important;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+    .td-search-input {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+// Override footer styles
+.td-footer {
+    background: $footer-bg !important;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+
+    * {
+        color: $footer-color !important;
+    }
+
+    a {
+        &:hover {
+            color: $primary !important;
+            text-decoration: none;
+        }
+    }
+
+    .text-white {
+        color: $footer-color !important;
+    }
+}
+
 // Banner styles
 .home-banner {
     background-color: #4C4C4C;
