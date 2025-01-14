@@ -54,16 +54,19 @@ languages:
         - name: Data Portal
           url: https://dandiarchive.org/
           weight: 1
+          pre: <i class="fa-solid fa-arrow-up-right-from-square"></i>
           params:
             target: _blank
         - name: Documentation
           url: https://docs.dandiarchive.org/
           weight: 2
+          pre: <i class="fa-solid fa-arrow-up-right-from-square"></i>
           params:
             target: _blank
         - name: DandiHub
           url: http://hub.dandiarchive.org/
           weight: 3
+          pre: <i class="fa-solid fa-arrow-up-right-from-square"></i>
           params:
             target: _blank
 
