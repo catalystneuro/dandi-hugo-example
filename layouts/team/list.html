@@ -5,24 +5,49 @@
         <p>{{ .Params.description }}</p>
     </header>
     <main>
-        <div class="team-list">
-            {{ range site.Data.team_members }}
-            <div class="team-member">
-                <img src="{{ .Site.BaseURL | relURL }}{{ .photo }}" alt="{{ .name }}" class="team-photo">
-                <div class="team-info">
-                    <h2>{{ .name }}</h2>
-                    <p>{{ .info | safeHTML }}</p>
-                    <p><strong>Email:</strong> <a href="mailto:{{ .email }}">{{ .email }}</a></p>
-                    <ul>
-                        {{ $teamMember := . }}
-                        {{ range seq 1 .number_educ }}
-                        <li>{{ index $teamMember (print "education" .) | safeHTML }}</li>
-                        {{ end }}
-                    </ul>
+        <section class="team-section">
+            <div class="team-list">
+                {{ range site.Data.team_members }}
+                <div class="team-member">
+                    <img src="{{ .Site.BaseURL | relURL }}{{ .photo }}" alt="{{ .name }}" class="team-photo">
+                    <div class="team-info">
+                        <h3>{{ .name }}</h3>
+                        <p>{{ .info | safeHTML }}</p>
+                        <p><strong>Email:</strong> <a href="mailto:{{ .email }}">{{ .email }}</a></p>
+                        <ul>
+                            {{ $teamMember := . }}
+                            {{ range seq 1 .number_educ }}
+                            <li>{{ index $teamMember (print "education" .) | safeHTML }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
                 </div>
+                {{ end }}
             </div>
-            {{ end }}
-        </div>
+        </section>
+
+        <section class="team-section">
+            <h2 class="section-title">Former Members</h2>
+            <div class="team-list">
+                {{ range site.Data.former_members }}
+                <div class="team-member">
+                    <div class="team-info">
+                        <h3>{{ .name }}</h3>
+                        <p>{{ .info | safeHTML }}</p>
+                        {{ if .email }}
+                        <p><strong>Email:</strong> <a href="mailto:{{ .email }}">{{ .email }}</a></p>
+                        {{ end }}
+                        <ul>
+                            {{ $teamMember := . }}
+                            {{ range seq 1 .number_educ }}
+                            <li>{{ index $teamMember (print "education" .) | safeHTML }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </section>
     </main>
 </div>
 
@@ -35,13 +60,29 @@
 
     .page-header {
         text-align: center;
-        margin-bottom: 30px;
-        padding-top: 80px;
+        margin-bottom: 1.5rem;
+        padding-top: 4rem;
     }
 
     .page-header h1 {
         font-size: 2rem;
         color: #333;
+        margin-bottom: 0.5rem;
+    }
+
+    .team-section {
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 2rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #ddd;
+        text-align: center;
+        font-weight: 500;
     }
 
     .team-list {
@@ -69,7 +110,7 @@
         margin-bottom: 15px;
     }
 
-    .team-info h2 {
+    .team-info h3 {
         font-size: 1.5rem;
         color: #007acc;
         margin-bottom: 10px;
