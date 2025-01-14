@@ -49,6 +49,13 @@ languages:
     title: DANDI
     params:
       description: A Docsy example site
+    menu:
+      main:
+        - name: Docs
+          url: https://docs.dandiarchive.org/
+          weight: 1
+          params:
+            target: _blank
 
 markup:
   goldmark:
